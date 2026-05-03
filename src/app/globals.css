@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Pipebusters design system — deep navy/charcoal, action red, electric cyan */
+    --background: 220 20% 14%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 18% 18%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 18% 16%;
+    --popover-foreground: 210 20% 98%;
+
+    /* Action red — primary CTA */
+    --primary: 0 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Electric cyan — secondary accent */
+    --secondary: 195 100% 50%;
+    --secondary-foreground: 220 20% 10%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 195 100% 50%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 25%;
+    --input: 220 15% 22%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Brand tokens */
+    --charcoal: 220 20% 14%;
+    --charcoal-light: 220 18% 22%;
+    --charcoal-dark: 220 25% 10%;
+    --action-red: 0 80% 50%;
+    --action-red-hover: 0 80% 45%;
+    --electric-blue: 195 100% 50%;
+    --electric-blue-hover: 195 100% 45%;
+    --navy: 220 40% 25%;
+    --gold: 45 93% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Montserrat", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glow-red {
+    box-shadow: 0 0 20px hsl(var(--action-red) / 0.4);
+  }
+
+  .glow-red:hover {
+    box-shadow: 0 0 30px hsl(var(--action-red) / 0.6);
+  }
+}
