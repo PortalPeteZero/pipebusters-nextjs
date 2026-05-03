@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -85,16 +86,16 @@ export function Header({ dict, locale, enHref, esHref }: HeaderProps) {
     <header className="fixed top-0 left-0 right-0 z-50 bg-charcoal-dark/90 backdrop-blur-md border-b border-border/20">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between h-16">
-          {/* Brand name */}
-          <Link
-            href={isSpanish ? "/es" : "/"}
-            className="flex-shrink-0 font-bold text-xl tracking-tight"
-          >
-            <span className="text-foreground">Pipe</span>
-            <span className="text-action-red">busters</span>
-            <span className="text-muted-foreground text-sm font-normal ml-1 hidden sm:inline">
-              Lanzarote
-            </span>
+          {/* Logo */}
+          <Link href={isSpanish ? "/es" : "/"} className="flex-shrink-0">
+            <Image
+              src="/images/logo-transparent.png"
+              alt="Pipebusters Lanzarote"
+              width={160}
+              height={48}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

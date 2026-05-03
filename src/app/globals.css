@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-    /* Pipebusters design system — deep navy/charcoal, action red, electric cyan */
     --background: 220 20% 14%;
     --foreground: 210 20% 98%;
 
@@ -14,11 +13,9 @@
     --popover: 220 18% 16%;
     --popover-foreground: 210 20% 98%;
 
-    /* Action red — primary CTA */
     --primary: 0 80% 50%;
     --primary-foreground: 0 0% 100%;
 
-    /* Electric cyan — secondary accent */
     --secondary: 195 100% 50%;
     --secondary-foreground: 220 20% 10%;
 
@@ -37,7 +34,6 @@
 
     --radius: 0.5rem;
 
-    /* Brand tokens */
     --charcoal: 220 20% 14%;
     --charcoal-light: 220 18% 22%;
     --charcoal-dark: 220 25% 10%;
@@ -59,18 +55,96 @@
     scroll-behavior: smooth;
   }
 
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply text-foreground antialiased;
     font-family: "Montserrat", system-ui, sans-serif;
+    background-color: hsl(220 20% 14%);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  }
+
+  .bg-gradient-dark {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--charcoal-dark)) 0%,
+      hsl(var(--background)) 50%,
+      hsl(var(--charcoal-dark)) 100%
+    );
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--charcoal-dark)) 0%,
+      hsl(var(--background)) 40%,
+      hsl(220 20% 16%) 60%,
+      hsl(var(--charcoal-dark)) 100%
+    );
   }
 }
 
 @layer utilities {
   .glow-red {
-    box-shadow: 0 0 20px hsl(var(--action-red) / 0.4);
+    box-shadow:
+      0 0 20px hsl(var(--action-red) / 0.5),
+      0 0 40px hsl(var(--action-red) / 0.3),
+      0 4px 20px hsl(0 0% 0% / 0.3);
+    transition: box-shadow 0.3s ease;
   }
 
   .glow-red:hover {
-    box-shadow: 0 0 30px hsl(var(--action-red) / 0.6);
+    box-shadow:
+      0 0 30px hsl(var(--action-red) / 0.7),
+      0 0 60px hsl(var(--action-red) / 0.4),
+      0 4px 30px hsl(0 0% 0% / 0.4);
+  }
+
+  .glow-blue {
+    box-shadow:
+      0 0 20px hsl(var(--electric-blue) / 0.5),
+      0 0 40px hsl(var(--electric-blue) / 0.3);
+  }
+
+  .logo-glow {
+    filter: drop-shadow(0 0 30px hsl(var(--action-red) / 0.4))
+            drop-shadow(0 0 60px hsl(var(--electric-blue) / 0.2));
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow:
+      0 10px 40px hsl(var(--charcoal-dark) / 0.5),
+      0 0 0 1px hsl(var(--primary) / 0.3);
+  }
+
+  .section-divider {
+    @apply h-px w-full;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--action-red) / 0.5) 50%,
+      transparent 100%
+    );
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: hsl(var(--charcoal-dark)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--charcoal-light)); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--action-red) / 0.7); }

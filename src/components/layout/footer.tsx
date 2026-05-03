@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin } from "lucide-react";
 import type { Dict, Locale } from "@/lib/i18n/types";
@@ -40,12 +41,14 @@ export function Footer({ dict, locale }: FooterProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand & Tagline */}
           <div className="sm:col-span-2 md:col-span-1">
-            <Link
-              href={isSpanish ? "/es" : "/"}
-              className="inline-block font-bold text-xl tracking-tight mb-3"
-            >
-              <span className="text-foreground">Pipe</span>
-              <span className="text-action-red">busters</span>
+            <Link href={isSpanish ? "/es" : "/"} className="inline-block mb-3">
+              <Image
+                src="/images/logo-transparent.png"
+                alt="Pipebusters Lanzarote"
+                width={140}
+                height={42}
+                className="h-14 w-auto"
+              />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {dict["footer.description"]}
