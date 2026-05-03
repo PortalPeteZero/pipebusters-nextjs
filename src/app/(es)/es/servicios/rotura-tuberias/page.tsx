@@ -4,6 +4,7 @@ import { AlertTriangle, CheckCircle } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Rotura de Tuberías y Renovación Sin Zanjas Lanzarote | Pipebusters",
@@ -47,29 +48,42 @@ export default function RoturaTuberiasPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Renovación de Tuberías Sin Zanjas
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Rotura de Tuberías{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            La rotura de tuberías es un método sin zanjas que sustituye tuberías enterradas
-            antiguas, agrietadas o corroídas tirando de una tubería nueva a través de la existente,
-            fracturando la antigua hacia afuera a su paso. Resultado: tubería nueva instalada
-            con una fracción de la excavación.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
-              Tecnología Sin Zanjas
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Completado en el Mismo Día
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Garantía 2 Años
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Renovación de Tuberías Sin Zanjas
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Rotura de Tuberías{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                La rotura de tuberías es un método sin zanjas que sustituye tuberías enterradas
+                antiguas, agrietadas o corroídas tirando de una tubería nueva a través de la existente,
+                fracturando la antigua hacia afuera a su paso. Resultado: tubería nueva instalada
+                con una fracción de la excavación.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
+                  Tecnología Sin Zanjas
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Completado en el Mismo Día
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Garantía 2 Años
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/apartment-work.png"
+          alt="Rotura tuberías sin zanjas Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>
@@ -97,17 +111,29 @@ export default function RoturaTuberiasPage() {
       {/* Benefits */}
       <section className="py-14 bg-charcoal-dark">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-bold mb-10">Ventajas Frente a la Excavación Abierta</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {benefits.map(({ title, desc }) => (
-              <div key={title} className="flex gap-3">
-                <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-sm mb-1">{title}</p>
-                  <p className="text-muted-foreground text-sm">{desc}</p>
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl font-bold mb-10">Ventajas Frente a la Excavación Abierta</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {benefits.map(({ title, desc }) => (
+                  <div key={title} className="flex gap-3">
+                    <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-sm mb-1">{title}</p>
+                      <p className="text-muted-foreground text-sm">{desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+              <Image
+                src="/images/pipe-repair.png"
+                alt="Trabajo profesional de rotura de tuberías por técnico de Pipebusters"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

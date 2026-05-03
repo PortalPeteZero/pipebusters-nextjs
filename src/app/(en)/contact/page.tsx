@@ -5,6 +5,7 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { getDict } from "@/lib/i18n/getDict";
 import { SITE } from "@/lib/site";
 import { ContactForm } from "@/components/sections/contact-form";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Contact Us | Pipebusters Lanzarote",
@@ -41,16 +42,29 @@ export default function ContactPage() {
       {/* Header */}
       <section className="pt-24 pb-10 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            {d["contact.pretitle"]}
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            {d["contact.title"]}{" "}
-            <span className="text-action-red">{d["contact.titleHighlight"]}</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-xl">
-            {d["contact.description"]}
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                {d["contact.pretitle"]}
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                {d["contact.title"]}{" "}
+                <span className="text-action-red">{d["contact.titleHighlight"]}</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-xl">
+                {d["contact.description"]}
+              </p>
+            </div>
+            <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+              <Image
+                src="/images/contact-graphic.webp"
+                alt="Contact Pipebusters Lanzarote"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 

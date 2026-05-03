@@ -4,6 +4,7 @@ import { ShieldCheck, CheckCircle } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Leak Repair Lanzarote: Minimal Disruption, 2-Year Warranty | Pipebusters",
@@ -65,28 +66,41 @@ export default function LeakRepairPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Fix It Right, First Time
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Leak Repair{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Once we&apos;ve located your leak, we repair it with the least disruption possible. We
-            fix the root cause: not just the visible symptom: and back every repair with a
-            2-year warranty.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
-              2-Year Warranty
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Same-Day Repairs
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Minimal Disruption
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Fix It Right, First Time
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Leak Repair{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                Once we&apos;ve located your leak, we repair it with the least disruption possible. We
+                fix the root cause: not just the visible symptom: and back every repair with a
+                2-year warranty.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
+                  2-Year Warranty
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Same-Day Repairs
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Minimal Disruption
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/pipe-repair.png"
+          alt="Pipe leak repair Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>
@@ -111,25 +125,55 @@ export default function LeakRepairPage() {
         </div>
       </section>
 
-      {/* Why Us */}
-      <section className="py-14 bg-charcoal-dark">
+      {/* Before/After Image */}
+      <section className="py-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-bold mb-10">Why Our Repairs Last</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
-            {[
-              { title: "Root cause diagnosis first", desc: "We don&apos;t patch symptoms. We investigate why the failure happened before deciding how to repair it." },
-              { title: "Correct materials for Lanzarote", desc: "Hard water and mineral content affect pipe and fitting longevity. We specify materials proven to last in Canary Islands conditions." },
-              { title: "Pressure-tested before we leave", desc: "Every repair is pressure-tested to working pressure before the job is signed off. If it doesn&apos;t hold, we don&apos;t leave." },
-              { title: "2-year written warranty", desc: "All leak repairs carry a 2-year warranty against the same failure. If it comes back, we fix it at no charge." },
-            ].map(({ title, desc }) => (
-              <div key={title} className="flex gap-4">
-                <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold mb-1">{title}</p>
-                  <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: desc }} />
-                </div>
+          <div className="relative rounded-xl overflow-hidden max-w-5xl mx-auto h-64 md:h-96">
+            <Image
+              src="/images/before-after.png"
+              alt="Before and after leak repair: water damage transformed to professional pipe installation"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-dark/70 via-transparent to-transparent" />
+            <p className="absolute bottom-0 left-0 right-0 p-6 text-lg font-semibold text-foreground">
+              From water damage to professional repairs: we fix the source, not just the symptoms
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us */}
+      <section className="py-14 bg-charcoal">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl font-bold mb-10">Why Our Repairs Last</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[
+                  { title: "Root cause diagnosis first", desc: "We don&apos;t patch symptoms. We investigate why the failure happened before deciding how to repair it." },
+                  { title: "Correct materials for Lanzarote", desc: "Hard water and mineral content affect pipe and fitting longevity. We specify materials proven to last in Canary Islands conditions." },
+                  { title: "Pressure-tested before we leave", desc: "Every repair is pressure-tested to working pressure before the job is signed off. If it doesn&apos;t hold, we don&apos;t leave." },
+                  { title: "2-year written warranty", desc: "All leak repairs carry a 2-year warranty against the same failure. If it comes back, we fix it at no charge." },
+                ].map(({ title, desc }) => (
+                  <div key={title} className="flex gap-4">
+                    <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold mb-1">{title}</p>
+                      <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: desc }} />
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+              <Image
+                src="/images/pipe-repair.png"
+                alt="Professional pipe repair work by Pipebusters technician"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

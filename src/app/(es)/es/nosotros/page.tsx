@@ -5,6 +5,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { getDict } from "@/lib/i18n/getDict";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Nosotros | Detección de Fugas y Fontanería Lanzarote | Pipebusters",
@@ -33,15 +34,46 @@ export default function NosotrosPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            {d["about.pretitle"]}
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            {d["about.title"]}{" "}
-            <span className="text-action-red">{d["about.titleHighlight"]}</span>{" "}
-            {d["about.titleEnd"]}
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-xl">{d["about.description"]}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                {d["about.pretitle"]}
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                {d["about.title"]}{" "}
+                <span className="text-action-red">{d["about.titleHighlight"]}</span>{" "}
+                {d["about.titleEnd"]}
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-xl">{d["about.description"]}</p>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/about-banner.webp"
+          alt="Equipo Pipebusters Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Image */}
+      <section className="py-12 bg-charcoal">
+        <div className="container mx-auto">
+          <div className="relative rounded-xl overflow-hidden max-w-5xl mx-auto h-64 md:h-96">
+            <Image
+              src="/images/villa-service.png"
+              alt="Servicio de Pipebusters en una villa de Lanzarote"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-dark/70 via-transparent to-transparent" />
+            <p className="absolute bottom-0 left-0 right-0 p-6 text-lg font-semibold text-foreground">
+              Dando servicio a propiedades residenciales y comerciales en toda Lanzarote
+            </p>
+          </div>
         </div>
       </section>
 
@@ -73,6 +105,35 @@ export default function NosotrosPage() {
                 <p className="text-muted-foreground text-sm">{desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-14 bg-charcoal">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Servicio en Toda Lanzarote</h2>
+              <p className="text-muted-foreground mb-6">
+                Prestamos servicios en toda la isla, desde Arrecife hasta Playa Blanca.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {["Arrecife", "Playa Blanca", "Puerto del Carmen", "Costa Teguise", "Tías", "Yaiza", "Teguise", "San Bartolomé", "Haría", "Tinajo"].map((area) => (
+                  <span key={area} className="px-4 py-2 bg-charcoal-light border border-border/30 rounded-full text-sm">
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="relative h-80 rounded-xl overflow-hidden">
+              <Image
+                src="/images/apartment-work.png"
+                alt="Equipo de Pipebusters trabajando en complejo de apartamentos en Lanzarote"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

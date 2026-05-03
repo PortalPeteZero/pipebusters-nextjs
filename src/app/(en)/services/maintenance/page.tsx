@@ -4,6 +4,7 @@ import { ShieldCheck, Calendar, CheckCircle, Wrench } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Plumbing Maintenance Plans Lanzarote | Pipebusters",
@@ -49,28 +50,41 @@ export default function MaintenancePage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Prevent Problems Before They Start
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Preventive Maintenance{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            An annual inspection catches small issues before they become expensive emergencies. Our
-            maintenance plans are designed specifically for the conditions Lanzarote properties face:
-            hard water, high UV, and seasonal occupancy patterns.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Annual Plans Available
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Ideal for Holiday Rentals
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Written Report Included
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Prevent Problems Before They Start
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Preventive Maintenance{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                An annual inspection catches small issues before they become expensive emergencies. Our
+                maintenance plans are designed specifically for the conditions Lanzarote properties face:
+                hard water, high UV, and seasonal occupancy patterns.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Annual Plans Available
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Ideal for Holiday Rentals
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Written Report Included
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/villa-service.png"
+          alt="Plumbing maintenance Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>

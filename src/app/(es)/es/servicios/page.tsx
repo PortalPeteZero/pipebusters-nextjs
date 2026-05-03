@@ -4,6 +4,7 @@ import { Droplets, Wrench, Waves, Thermometer, ShieldCheck, AlertTriangle } from
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Servicios de Fontanería y Detección de Fugas Lanzarote | Pipebusters",
@@ -89,19 +90,32 @@ export default function ServiciosPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Lo Que Hacemos
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Servicios Profesionales de{" "}
-            <span className="text-action-red">Detección de Fugas</span>{" "}
-            y Fontanería en Lanzarote
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Desde la localización de fugas ocultas hasta instalaciones completas de fontanería,
-            Pipebusters cubre todos los aspectos de la gestión del agua en viviendas, villas y
-            locales comerciales en toda Lanzarote.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Lo Que Hacemos
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Servicios Profesionales de{" "}
+                <span className="text-action-red">Detección de Fugas</span>{" "}
+                y Fontanería en Lanzarote
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                Desde la localización de fugas ocultas hasta instalaciones completas de fontanería,
+                Pipebusters cubre todos los aspectos de la gestión del agua en viviendas, villas y
+                locales comerciales en toda Lanzarote.
+              </p>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/services-graphic.webp"
+          alt="Servicios detección fugas Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+          </div>
         </div>
       </section>
 

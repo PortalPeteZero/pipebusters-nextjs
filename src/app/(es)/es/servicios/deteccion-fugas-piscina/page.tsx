@@ -4,6 +4,7 @@ import { Waves, FlaskConical, Search, Gauge, ShieldCheck } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Detección de Fugas en Piscinas Lanzarote: Sin Vaciar, Sin Pagar | Pipebusters",
@@ -61,28 +62,41 @@ export default function DeteccionFugasPiscinaPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Especialistas en Fugas de Piscinas y Spas
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Detección de Fugas en Piscinas{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            ¿Tu piscina pierde más agua de lo que puede explicar la evaporación? Localizamos
-            fugas en piscinas y spas en toda Lanzarote mediante tecnología no invasiva: sin
-            vaciar la piscina en la mayoría de los casos.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
-              Sin Encontrar, Sin Pagar
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Sin Vaciado Total
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Todo Tipo de Piscinas
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Especialistas en Fugas de Piscinas y Spas
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Detección de Fugas en Piscinas{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                ¿Tu piscina pierde más agua de lo que puede explicar la evaporación? Localizamos
+                fugas en piscinas y spas en toda Lanzarote mediante tecnología no invasiva: sin
+                vaciar la piscina en la mayoría de los casos.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
+                  Sin Encontrar, Sin Pagar
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Sin Vaciado Total
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Todo Tipo de Piscinas
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/pool-plumbing-2.jpeg"
+          alt="Detección fugas piscina Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>

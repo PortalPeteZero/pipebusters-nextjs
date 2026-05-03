@@ -4,6 +4,7 @@ import { MapPin, CheckCircle } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Leak Detection Case Studies Lanzarote | Pipebusters",
@@ -24,6 +25,8 @@ const caseStudies = [
     title: "Hidden Slab Leak,Villa in Playa Blanca",
     location: "Playa Blanca",
     service: "Leak Detection",
+    image: "/images/before-after.png",
+    imageAlt: "Before and after leak repair in a Lanzarote villa",
     problem:
       "A four-bedroom villa had seen its water bill double over three months. Visible damp patches appeared on the living room floor, but no obvious pipe runs were accessible.",
     solution:
@@ -35,6 +38,8 @@ const caseStudies = [
     title: "Swimming Pool Losing 15cm Per Day,Puerto del Carmen",
     location: "Puerto del Carmen",
     service: "Pool Leak Detection",
+    image: "/images/pool-plumbing-2.jpeg",
+    imageAlt: "Pool plumbing repair in Puerto del Carmen, Lanzarote",
     problem:
       "A holiday rental villa's 12-metre pool was losing approximately 15cm of water per day. The owner had already replaced the pump and filter, but the loss continued.",
     solution:
@@ -46,6 +51,8 @@ const caseStudies = [
     title: "Emergency Burst Pipe,Apartment Block, Costa Teguise",
     location: "Costa Teguise",
     service: "Emergency Plumbing",
+    image: "/images/apartment-work.png",
+    imageAlt: "Emergency plumbing work at apartment complex in Costa Teguise",
     problem:
       "A supply pipe serving six apartments burst at 11pm on a Saturday. Water was flowing through ceiling voids and threatening electrical fittings.",
     solution:
@@ -57,6 +64,8 @@ const caseStudies = [
     title: "Concealed Roof Terrace Leak,Commercial Property, Arrecife",
     location: "Arrecife",
     service: "Leak Detection",
+    image: "/images/restaurant-plumbing.png",
+    imageAlt: "Commercial plumbing leak detection in Arrecife, Lanzarote",
     problem:
       "A restaurant was experiencing recurring damp on a ground-floor ceiling despite multiple previous repair attempts by other contractors. The source had been incorrectly attributed to roof waterproofing.",
     solution:
@@ -77,17 +86,30 @@ export default function CaseStudiesPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Real Work, Real Results
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Case Studies Lanzarote:{" "}
-            <span className="text-action-red">Leaks Found &amp; Fixed</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            A selection of completed jobs across Lanzarote. Each case shows the problem, the
-            technology used, and the outcome achieved.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Real Work, Real Results
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Case Studies Lanzarote:{" "}
+                <span className="text-action-red">Leaks Found &amp; Fixed</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                A selection of completed jobs across Lanzarote. Each case shows the problem, the
+                technology used, and the outcome achieved.
+              </p>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/before-after.png"
+          alt="Leak detection case studies Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+          </div>
         </div>
       </section>
 
@@ -95,36 +117,49 @@ export default function CaseStudiesPage() {
       <section className="py-14 bg-charcoal">
         <div className="container mx-auto space-y-8">
           {caseStudies.map((cs, i) => (
-            <div key={i} className="bg-charcoal-light border border-border/30 rounded-xl p-8">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span className="text-xs font-semibold text-electric-blue bg-electric-blue/10 px-2 py-1 rounded">
-                  {cs.service}
-                </span>
-                <span className="text-muted-foreground text-xs flex items-center gap-1">
-                  <MapPin className="w-3 h-3" />
-                  {cs.location}
-                </span>
-              </div>
-              <h2 className="text-xl font-bold mb-6">{cs.title}</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div>
-                  <p className="text-electric-blue text-xs font-semibold uppercase tracking-wider mb-2">Problem</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{cs.problem}</p>
+            <div key={i} className="bg-charcoal-light border border-border/30 rounded-xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-3">
+                <div className="relative h-48 lg:h-full min-h-[180px]">
+                  <Image
+                    src={cs.image}
+                    alt={cs.imageAlt}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-charcoal-light/80 via-charcoal-light/40 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 lg:inset-0 p-4 flex flex-col justify-end lg:justify-end">
+                    <span className="inline-block text-xs font-semibold text-electric-blue bg-electric-blue/10 px-2 py-1 rounded w-fit mb-2">
+                      {cs.service}
+                    </span>
+                    <span className="text-muted-foreground text-xs flex items-center gap-1">
+                      <MapPin className="w-3 h-3" />
+                      {cs.location}
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-electric-blue text-xs font-semibold uppercase tracking-wider mb-2">Solution</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{cs.solution}</p>
-                </div>
-                <div>
-                  <p className="text-electric-blue text-xs font-semibold uppercase tracking-wider mb-2">Outcomes</p>
-                  <ul className="space-y-1.5">
-                    {cs.outcomes.map((o) => (
-                      <li key={o} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <CheckCircle className="w-4 h-4 text-action-red shrink-0 mt-0.5" />
-                        {o}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="lg:col-span-2 p-8">
+                  <h2 className="text-xl font-bold mb-6">{cs.title}</h2>
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div>
+                      <p className="text-electric-blue text-xs font-semibold uppercase tracking-wider mb-2">Problem</p>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{cs.problem}</p>
+                    </div>
+                    <div>
+                      <p className="text-electric-blue text-xs font-semibold uppercase tracking-wider mb-2">Solution</p>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{cs.solution}</p>
+                    </div>
+                    <div>
+                      <p className="text-electric-blue text-xs font-semibold uppercase tracking-wider mb-2">Outcomes</p>
+                      <ul className="space-y-1.5">
+                        {cs.outcomes.map((o) => (
+                          <li key={o} className="flex items-start gap-2 text-sm text-muted-foreground">
+                            <CheckCircle className="w-4 h-4 text-action-red shrink-0 mt-0.5" />
+                            {o}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

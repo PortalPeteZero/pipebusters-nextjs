@@ -4,6 +4,7 @@ import { ShieldCheck, CheckCircle } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Reparación de Fugas Lanzarote: Mínima Interrupción, Garantía 2 Años | Pipebusters",
@@ -65,28 +66,41 @@ export default function ReparacionFugasPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Solucionado a la Primera
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Reparación de Fugas{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Una vez localizada tu fuga, la reparamos con la menor interrupción posible. Tratamos
-            la causa raíz: no solo el síntoma visible: y respaldamos cada reparación con una
-            garantía de 2 años.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
-              Garantía 2 Años
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Reparaciones el Mismo Día
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Mínima Interrupción
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Solucionado a la Primera
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Reparación de Fugas{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                Una vez localizada tu fuga, la reparamos con la menor interrupción posible. Tratamos
+                la causa raíz: no solo el síntoma visible: y respaldamos cada reparación con una
+                garantía de 2 años.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
+                  Garantía 2 Años
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Reparaciones el Mismo Día
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Mínima Interrupción
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/pipe-repair.png"
+          alt="Reparación de fugas Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>
@@ -112,25 +126,55 @@ export default function ReparacionFugasPage() {
         </div>
       </section>
 
-      {/* Why Us */}
-      <section className="py-14 bg-charcoal-dark">
+      {/* Before/After Image */}
+      <section className="py-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-bold mb-10">Por Qué Nuestras Reparaciones Duran</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
-            {[
-              { title: "Primero, diagnóstico de la causa raíz", desc: "No parcheamos síntomas. Investigamos por qué se produjo el fallo antes de decidir cómo repararlo." },
-              { title: "Materiales adecuados para Lanzarote", desc: "El agua dura y el contenido mineral afectan a la durabilidad de las tuberías. Especificamos materiales probados en las condiciones de las Islas Canarias." },
-              { title: "Prueba de presión antes de marcharnos", desc: "Cada reparación se somete a prueba de presión en condiciones de trabajo antes de cerrar el trabajo. Si no aguanta, no nos vamos." },
-              { title: "Garantía escrita de 2 años", desc: "Todas las reparaciones de fugas incluyen una garantía de 2 años contra el mismo fallo. Si vuelve, lo arreglamos sin coste." },
-            ].map(({ title, desc }) => (
-              <div key={title} className="flex gap-4">
-                <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold mb-1">{title}</p>
-                  <p className="text-muted-foreground text-sm">{desc}</p>
-                </div>
+          <div className="relative rounded-xl overflow-hidden max-w-5xl mx-auto h-64 md:h-96">
+            <Image
+              src="/images/before-after.png"
+              alt="Antes y después de reparación de fugas: daños por agua a instalación profesional"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-dark/70 via-transparent to-transparent" />
+            <p className="absolute bottom-0 left-0 right-0 p-6 text-lg font-semibold text-foreground">
+              De daños por agua a reparaciones profesionales: solucionamos la causa, no solo los síntomas
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us */}
+      <section className="py-14 bg-charcoal">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl font-bold mb-10">Por Qué Nuestras Reparaciones Duran</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[
+                  { title: "Primero, diagnóstico de la causa raíz", desc: "No parcheamos síntomas. Investigamos por qué se produjo el fallo antes de decidir cómo repararlo." },
+                  { title: "Materiales adecuados para Lanzarote", desc: "El agua dura y el contenido mineral afectan a la durabilidad de las tuberías. Especificamos materiales probados en las condiciones de las Islas Canarias." },
+                  { title: "Prueba de presión antes de marcharnos", desc: "Cada reparación se somete a prueba de presión en condiciones de trabajo antes de cerrar el trabajo. Si no aguanta, no nos vamos." },
+                  { title: "Garantía escrita de 2 años", desc: "Todas las reparaciones de fugas incluyen una garantía de 2 años contra el mismo fallo. Si vuelve, lo arreglamos sin coste." },
+                ].map(({ title, desc }) => (
+                  <div key={title} className="flex gap-4">
+                    <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold mb-1">{title}</p>
+                      <p className="text-muted-foreground text-sm">{desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+              <Image
+                src="/images/pipe-repair.png"
+                alt="Trabajo profesional de reparación de tuberías por técnico de Pipebusters"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

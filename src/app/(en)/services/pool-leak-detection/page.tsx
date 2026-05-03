@@ -4,6 +4,7 @@ import { Waves, FlaskConical, Search, Gauge, ShieldCheck } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Pool Leak Detection Lanzarote: No Find, No Fee | Pipebusters",
@@ -61,28 +62,41 @@ export default function PoolLeakDetectionPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Specialist Pool &amp; Spa Leak Detection
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Pool Leak Detection{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Is your pool losing more water than evaporation can explain? We locate swimming pool
-            and spa leaks across Lanzarote using non-invasive technology: without draining your
-            pool in most cases.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
-              No Find, No Fee
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              No Full Drainage Required
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              All Pool Types
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Specialist Pool &amp; Spa Leak Detection
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Pool Leak Detection{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                Is your pool losing more water than evaporation can explain? We locate swimming pool
+                and spa leaks across Lanzarote using non-invasive technology: without draining your
+                pool in most cases.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
+                  No Find, No Fee
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  No Full Drainage Required
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  All Pool Types
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/pool-plumbing-2.jpeg"
+          alt="Pool leak detection Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>

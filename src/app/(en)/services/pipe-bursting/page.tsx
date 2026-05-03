@@ -4,6 +4,7 @@ import { AlertTriangle, CheckCircle } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Pipe Bursting & Trenchless Pipe Replacement Lanzarote | Pipebusters",
@@ -47,28 +48,41 @@ export default function PipeBurstingPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            No-Dig Pipe Renewal
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Pipe Bursting{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Pipe bursting is a trenchless method that replaces old, cracked, or corroded underground
-            pipework by pulling new pipe through the existing one, fracturing the old pipe outward
-            as it goes. Result: new pipe in place with a fraction of the excavation.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
-              No-Dig Technology
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Same-Day Completion
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              2-Year Warranty
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                No-Dig Pipe Renewal
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Pipe Bursting{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                Pipe bursting is a trenchless method that replaces old, cracked, or corroded underground
+                pipework by pulling new pipe through the existing one, fracturing the old pipe outward
+                as it goes. Result: new pipe in place with a fraction of the excavation.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
+                  No-Dig Technology
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Same-Day Completion
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  2-Year Warranty
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/apartment-work.png"
+          alt="Pipe bursting trenchless Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>
@@ -96,17 +110,29 @@ export default function PipeBurstingPage() {
       {/* Benefits */}
       <section className="py-14 bg-charcoal-dark">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-bold mb-10">Benefits Over Open-Cut Excavation</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {benefits.map(({ title, desc }) => (
-              <div key={title} className="flex gap-3">
-                <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-sm mb-1">{title}</p>
-                  <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: desc }} />
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-2xl font-bold mb-10">Benefits Over Open-Cut Excavation</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {benefits.map(({ title, desc }) => (
+                  <div key={title} className="flex gap-3">
+                    <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-sm mb-1">{title}</p>
+                      <p className="text-muted-foreground text-sm" dangerouslySetInnerHTML={{ __html: desc }} />
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+              <Image
+                src="/images/pipe-repair.png"
+                alt="Trenchless pipe bursting work by Pipebusters technician"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

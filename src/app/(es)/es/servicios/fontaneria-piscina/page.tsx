@@ -4,6 +4,7 @@ import { Waves, Wrench, Settings } from "lucide-react";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Fontanería de Piscinas Lanzarote: Bombas, Filtros y Tuberías | Pipebusters",
@@ -47,28 +48,41 @@ export default function FontaneriaPiscinaPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            Bombas, Filtros y Tuberías
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Fontanería de Piscinas{" "}
-            <span className="text-action-red">Lanzarote</span>
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            Desde la sustitución de bombas y filtros hasta renovaciones completas del sistema
-            de circulación, nos encargamos de todos los trabajos de fontanería para piscinas
-            privadas y comerciales en toda la isla.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Todo Tipo de Piscinas
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Equipos de Alta Eficiencia
-            </span>
-            <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
-              Presupuesto Gratuito
-            </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                Bombas, Filtros y Tuberías
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Fontanería de Piscinas{" "}
+                <span className="text-action-red">Lanzarote</span>
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                Desde la sustitución de bombas y filtros hasta renovaciones completas del sistema
+                de circulación, nos encargamos de todos los trabajos de fontanería para piscinas
+                privadas y comerciales en toda la isla.
+              </p>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Todo Tipo de Piscinas
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Equipos de Alta Eficiencia
+                </span>
+                <span className="bg-charcoal-light border border-border/30 text-foreground text-sm px-3 py-1.5 rounded">
+                  Presupuesto Gratuito
+                </span>
+              </div>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/pool-plumbing-1.jpeg"
+          alt="Fontanería piscinas Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
           </div>
         </div>
       </section>
@@ -83,6 +97,30 @@ export default function FontaneriaPiscinaPage() {
                 <Icon className="w-6 h-6 text-action-red mb-4" />
                 <h3 className="font-bold mb-2">{title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="py-12 bg-charcoal-dark">
+        <div className="container mx-auto">
+          <h2 className="text-2xl font-bold mb-8">Nuestros Trabajos</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { src: "/images/pool-plumbing-1.jpeg", alt: "Instalación de sistema de filtro y válvulas de piscina" },
+              { src: "/images/pool-plumbing-2.jpeg", alt: "Caja de bomba de piscina y tuberías" },
+              { src: "/images/pool-plumbing-3.jpeg", alt: "Instalación de tuberías subterráneas de piscina" },
+              { src: "/images/pool-plumbing-4.jpeg", alt: "Colector de válvulas de fontanería de piscina" },
+            ].map((img) => (
+              <div key={img.src} className="relative aspect-square rounded-lg overflow-hidden border border-border/30">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
             ))}
           </div>

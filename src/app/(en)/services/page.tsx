@@ -4,6 +4,7 @@ import { Droplets, Wrench, Waves, Thermometer, ShieldCheck, AlertTriangle } from
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
+import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
   title: "Plumbing & Leak Detection Services Lanzarote | Pipebusters",
@@ -89,18 +90,31 @@ export default function ServicesPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-charcoal-dark">
         <div className="container mx-auto">
-          <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
-            What We Do
-          </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Professional{" "}
-            <span className="text-action-red">Leak Detection</span>{" "}
-            &amp; Plumbing Services in Lanzarote
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            From hidden leak tracing to full plumbing installations, Pipebusters covers every aspect of
-            water management for homes, villas, and commercial properties across Lanzarote.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="text-electric-blue text-sm font-semibold uppercase tracking-widest mb-3">
+                What We Do
+              </p>
+              <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+                Professional{" "}
+                <span className="text-action-red">Leak Detection</span>{" "}
+                &amp; Plumbing Services in Lanzarote
+              </h1>
+              <p className="text-muted-foreground text-lg max-w-2xl">
+                From hidden leak tracing to full plumbing installations, Pipebusters covers every aspect of
+                water management for homes, villas, and commercial properties across Lanzarote.
+              </p>
+            </div>
+      <div className="relative h-64 md:h-80 rounded-xl overflow-hidden order-first md:order-last">
+        <Image
+          src="/images/services-graphic.webp"
+          alt="Leak detection and plumbing services Lanzarote"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+          </div>
         </div>
       </section>
 
