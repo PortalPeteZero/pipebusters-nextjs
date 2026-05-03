@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Pipe Bursting & Trenchless Pipe Replacement Lanzarote | Pipebusters",
   description:
-    "Trenchless pipe renewal in Lanzarote — replace old or damaged pipework without extensive excavation. Single-day completion in most cases. Free survey.",
+    "Trenchless pipe renewal in Lanzarote: replace old or damaged pipework without extensive excavation. Single-day completion in most cases. Free survey.",
   path: "/services/pipe-bursting",
   locale: "en",
   alternate: { en: "/services/pipe-bursting", es: "/es/servicios/rotura-tuberias" },
@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
 
 const schema = serviceSchema({
   name: "Pipe Bursting Lanzarote",
-  description: "Trenchless pipe renewal — replace aging pipework without extensive excavation.",
+  description: "Trenchless pipe renewal: replace aging pipework without extensive excavation.",
   url: `${SITE.baseUrl}/services/pipe-bursting`,
   locale: "en",
 });
@@ -31,7 +31,7 @@ const benefits = [
   { title: "Minimal excavation", desc: "Access pits at each end of the pipe run only. No long trenches, no disruption to landscaping, tiling, or structures." },
   { title: "Single-day completion", desc: "Most domestic pipe bursting jobs are completed in a single working day. You have water back before we leave." },
   { title: "Larger pipe diameter", desc: "The new pipe is slightly larger than the old one, improving flow rates if the original was undersized or scaled." },
-  { title: "Durable material", desc: "New HDPE or PE100 pipe is highly resistant to corrosion and scale — lifespan of 50+ years in Lanzarote conditions." },
+  { title: "Durable material", desc: "New HDPE or PE100 pipe is highly resistant to corrosion and scale, with a lifespan of 50+ years in Lanzarote conditions." },
   { title: "Cost-effective", desc: "Significantly cheaper than full open-cut excavation when you factor in reinstatement of tiles, planting, and concrete." },
   { title: "Guaranteed", desc: "All trenchless work carries our standard 2-year workmanship warranty plus the manufacturer&apos;s pipe product warranty." },
 ];
@@ -56,7 +56,7 @@ export default function PipeBurstingPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             Pipe bursting is a trenchless method that replaces old, cracked, or corroded underground
-            pipework by pulling new pipe through the existing one — fracturing the old pipe outward
+            pipework by pulling new pipe through the existing one, fracturing the old pipe outward
             as it goes. Result: new pipe in place with a fraction of the excavation.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -79,7 +79,7 @@ export default function PipeBurstingPage() {
           <h2 className="text-2xl font-bold mb-10">How Pipe Bursting Works</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
             {[
-              { step: "01", title: "Access Points", desc: "Small pits are dug at each end of the pipe run — typically 60cm × 60cm. That&apos;s all the excavation needed." },
+              { step: "01", title: "Access Points", desc: "Small pits are dug at each end of the pipe run, typically 60cm x 60cm. That&apos;s all the excavation needed." },
               { step: "02", title: "New Pipe Pulled Through", desc: "A bursting head is attached to the new PE pipe and pulled through the old pipe, fracturing it outward into the surrounding soil." },
               { step: "03", title: "Connections Made", desc: "The new pipe is connected at both ends, pressure-tested, and the access pits reinstated. Job complete." },
             ].map(({ step, title, desc }) => (

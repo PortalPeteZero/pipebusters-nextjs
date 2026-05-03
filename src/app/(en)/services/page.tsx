@@ -72,7 +72,7 @@ const services = [
   {
     icon: AlertTriangle,
     title: "Pipe Bursting",
-    desc: "Trenchless pipe renewal — replace aging or damaged pipework without extensive excavation. Single-day completion in most cases.",
+    desc: "Trenchless pipe renewal: replace aging or damaged pipework without extensive excavation. Single-day completion in most cases.",
     href: "/services/pipe-bursting",
     tag: "No-Dig Technology",
   },
@@ -95,7 +95,7 @@ export default function ServicesPage() {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
             Professional{" "}
             <span className="text-action-red">Leak Detection</span>{" "}
-            &amp; Plumbing Services
+            &amp; Plumbing Services in Lanzarote
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             From hidden leak tracing to full plumbing installations, Pipebusters covers every aspect of

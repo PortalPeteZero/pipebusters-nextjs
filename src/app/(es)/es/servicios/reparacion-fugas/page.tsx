@@ -6,9 +6,9 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Reparación de Fugas Lanzarote — Mínima Interrupción, Garantía 2 Años | Pipebusters",
+  title: "Reparación de Fugas Lanzarote: Mínima Interrupción, Garantía 2 Años | Pipebusters",
   description:
-    "Reparación profesional de fugas en Lanzarote. Reparación de tuberías, sellado de uniones, revestimiento epoxi. Mínima interrupción, garantía de 2 años. Reparaciones urgentes disponibles.",
+    "Reparación profesional de fugas en Lanzarote. Reparación de tuberías, sellado de uniones, revestimiento epoxi. Mínima interrupción, garantía de 2 años.",
   path: "/es/servicios/reparacion-fugas",
   locale: "es",
   alternate: { en: "/services/leak-repair", es: "/es/servicios/reparacion-fugas" },
@@ -38,7 +38,7 @@ const repairTypes = [
   },
   {
     title: "Revestimiento Interior con Epoxi",
-    desc: "Para tuberías enterradas en paredes o bajo suelos, un revestimiento de resina epoxi puede sellar la tubería desde el interior — sin excavación en la mayoría de los casos.",
+    desc: "Para tuberías enterradas en paredes o bajo suelos, un revestimiento de resina epoxi puede sellar la tubería desde el interior: sin excavación en la mayoría de los casos.",
   },
   {
     title: "Reparación de Parche",
@@ -74,7 +74,7 @@ export default function ReparacionFugasPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             Una vez localizada tu fuga, la reparamos con la menor interrupción posible. Tratamos
-            la causa raíz — no solo el síntoma visible — y respaldamos cada reparación con una
+            la causa raíz: no solo el síntoma visible: y respaldamos cada reparación con una
             garantía de 2 años.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -144,7 +144,7 @@ export default function ReparacionFugasPage() {
               <h2 className="text-xl font-bold mb-2">Garantía de Reparación de 2 Años</h2>
               <p className="text-muted-foreground">
                 Todas las reparaciones que realizamos están cubiertas durante 2 años contra el
-                mismo punto de fallo. Esta es una garantía por escrito — no una promesa verbal.
+                mismo punto de fallo. Esta es una garantía por escrito: no una promesa verbal.
                 Si la reparación falla dentro del período de garantía, volvemos y la arreglamos
                 sin coste alguno.
               </p>
@@ -159,7 +159,7 @@ export default function ReparacionFugasPage() {
           <h2 className="text-3xl font-bold text-white mb-4">¿Listo para Reparar Tu Fuga?</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
             Gestionamos la detección y la reparación en una sola visita siempre que es posible.
-            Contáctanos hoy para un presupuesto gratuito — sin compromiso.
+            Contáctanos hoy para un presupuesto gratuito: sin compromiso.
           </p>
           <Link
             href="/es/contacto"

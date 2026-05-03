@@ -6,9 +6,9 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Fontanería de Piscinas Lanzarote — Bombas, Filtros y Tuberías | Pipebusters",
+  title: "Fontanería de Piscinas Lanzarote: Bombas, Filtros y Tuberías | Pipebusters",
   description:
-    "Servicios completos de fontanería para piscinas en Lanzarote. Instalación de bombas y filtros, reparación del sistema de circulación, sustitución de tuberías. Todos los tipos de piscina.",
+    "Fontanería de piscinas en Lanzarote. Instalación de bombas y filtros, reparación del sistema de circulación, sustitución de tuberías.",
   path: "/es/servicios/fontaneria-piscina",
   locale: "es",
   alternate: { en: "/services/pool-plumbing", es: "/es/servicios/fontaneria-piscina" },

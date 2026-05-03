@@ -69,7 +69,7 @@ export default function HomePage() {
             <div className="mb-4 animate-fade-in">
               <Image
                 src="/images/logo-transparent.png"
-                alt="Pipebusters Lanzarote — Leak Detection and Plumbing Experts"
+                alt="Pipebusters Lanzarote: Leak Detection and Plumbing Experts"
                 width={384}
                 height={384}
                 className="w-64 md:w-80 lg:w-96 mx-auto logo-glow"

@@ -31,8 +31,8 @@ const included = [
   "Full property leak scan using thermal imaging",
   "Cold and hot water pressure test",
   "Boiler combustion analysis and safety check",
-  "Tap and valve inspection — identify failing washers and cartridges before they fail",
-  "WC and cistern check — identify running cisterns wasting water",
+  "Tap and valve inspection: identify failing washers and cartridges before they fail",
+  "WC and cistern check: identify running cisterns wasting water",
   "Visible pipework inspection for corrosion and joint deterioration",
   "Written condition report with photos",
   "Priority booking for any follow-up repairs",
@@ -58,7 +58,7 @@ export default function MaintenancePage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             An annual inspection catches small issues before they become expensive emergencies. Our
-            maintenance plans are designed specifically for the conditions Lanzarote properties face —
+            maintenance plans are designed specifically for the conditions Lanzarote properties face:
             hard water, high UV, and seasonal occupancy patterns.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">

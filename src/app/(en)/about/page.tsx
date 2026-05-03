@@ -7,9 +7,9 @@ import { getDict } from "@/lib/i18n/getDict";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About Us | Pipebusters Lanzarote",
+  title: "About Us | Leak Detection & Plumbing Lanzarote | Pipebusters",
   description:
-    "Learn about Pipebusters Lanzarote — professional leak detection and plumbing specialists with 20+ years combined experience. No Find, No Fee guarantee.",
+    "Learn about Pipebusters Lanzarote: professional leak detection and plumbing specialists with 20+ years combined experience. No Find, No Fee guarantee.",
   path: "/about",
   locale: "en",
   alternate: { en: "/about", es: "/es/nosotros" },

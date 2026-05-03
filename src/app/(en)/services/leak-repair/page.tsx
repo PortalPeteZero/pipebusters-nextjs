@@ -6,9 +6,9 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Leak Repair Lanzarote — Minimal Disruption, 2-Year Warranty | Pipebusters",
+  title: "Leak Repair Lanzarote: Minimal Disruption, 2-Year Warranty | Pipebusters",
   description:
-    "Professional leak repair across Lanzarote. Pipe repair, joint sealing, epoxy lining. Minimal disruption, 2-year warranty on all work. Same-day repairs available.",
+    "Professional leak repair across Lanzarote. Pipe repair, joint sealing, epoxy lining. Minimal disruption, 2-year warranty on all work. Same-day repairs available",
   path: "/services/leak-repair",
   locale: "en",
   alternate: { en: "/services/leak-repair", es: "/es/servicios/reparacion-fugas" },
@@ -38,7 +38,7 @@ const repairTypes = [
   },
   {
     title: "Epoxy Pipe Lining",
-    desc: "For pipes buried in walls or under floors, an epoxy resin lining can seal the pipe internally — zero excavation required in most cases.",
+    desc: "For pipes buried in walls or under floors, an epoxy resin lining can seal the pipe internally: zero excavation required in most cases.",
   },
   {
     title: "Patch Repair",
@@ -74,7 +74,7 @@ export default function LeakRepairPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             Once we&apos;ve located your leak, we repair it with the least disruption possible. We
-            fix the root cause — not just the visible symptom — and back every repair with a
+            fix the root cause: not just the visible symptom: and back every repair with a
             2-year warranty.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -143,7 +143,7 @@ export default function LeakRepairPage() {
               <h2 className="text-xl font-bold mb-2">2-Year Repair Warranty</h2>
               <p className="text-muted-foreground">
                 Every repair we complete is covered for 2 years against the same failure point.
-                This is a written guarantee — not a verbal promise. If the repair fails within
+                This is a written guarantee: not a verbal promise. If the repair fails within
                 the warranty period, we return and fix it at zero cost.
               </p>
             </div>
@@ -157,7 +157,7 @@ export default function LeakRepairPage() {
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Your Leak Fixed?</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
             We handle detection and repair in a single visit wherever possible. Contact us today
-            for a free quote — no obligation.
+            for a free quote: no obligation.
           </p>
           <Link
             href="/contact"

@@ -24,7 +24,7 @@ const posts = [
     slug: "signs-you-have-a-hidden-water-leak",
     title: "5 Signs You Have a Hidden Water Leak in Your Lanzarote Property",
     excerpt:
-      "High water bills, damp patches, and the sound of running water when taps are off — learn the warning signs that point to a hidden leak before it causes serious damage.",
+      "High water bills, damp patches, and the sound of running water when taps are off: learn the warning signs that point to a hidden leak before it causes serious damage.",
     date: "2024-03-15",
     readTime: "5 min read",
     category: "Leak Detection",
@@ -69,7 +69,7 @@ const posts = [
     slug: "no-find-no-fee-what-it-means",
     title: "What Does 'No Find, No Fee' Actually Mean for You?",
     excerpt:
-      "Our guarantee explained in plain language — what it covers, what happens when we do find the leak, and how it protects you from wasted callout charges.",
+      "Our guarantee explained in plain language: what it covers, what happens when we do find the leak, and how it protects you from wasted callout charges.",
     date: "2023-10-18",
     readTime: "3 min read",
     category: "About Us",
@@ -91,12 +91,13 @@ export default function BlogPage() {
             Expert Advice
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            The Pipebusters{" "}
-            <span className="text-action-red">Blog</span>
+            Leak Detection &amp; Plumbing{" "}
+            <span className="text-action-red">Blog</span>{" "}
+            Lanzarote
           </h1>
           <p className="text-muted-foreground text-lg max-w-xl">
             Practical guides on leak detection, plumbing, and water management for property owners
-            in Lanzarote — written by engineers with 20+ years on the island.
+            in Lanzarote: written by engineers with 20+ years on the island.
           </p>
         </div>
       </section>
@@ -149,7 +150,7 @@ export default function BlogPage() {
           <BookOpen className="w-10 h-10 text-white mx-auto mb-4" />
           <h2 className="text-3xl font-bold text-white mb-4">Have a Specific Problem?</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
-            Can&apos;t find the answer in our blog? Contact us directly — we&apos;re happy to give
+            Can&apos;t find the answer in our blog? Contact us directly: we&apos;re happy to give
             free advice before you book.
           </p>
           <Link

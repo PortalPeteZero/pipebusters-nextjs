@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Pipebusters Lanzarote",
   },
   description:
-    "Servicios profesionales de detección de fugas y fontanería en Lanzarote. Cámara térmica, sensores acústicos, fugas en piscinas. Garantía Sin Encontrar, Sin Pagar.",
+    "Servicios de detección de fugas y fontanería en Lanzarote. Cámara térmica, sensores acústicos, fugas en piscinas. Garantía Sin Encontrar, Sin Pagar.",
   openGraph: {
     type: "website",
     siteName: SITE.name,

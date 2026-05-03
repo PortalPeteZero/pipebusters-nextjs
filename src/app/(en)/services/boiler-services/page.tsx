@@ -111,12 +111,12 @@ export default function BoilerServicesPage() {
       <section className="py-14 bg-charcoal-dark">
         <div className="container mx-auto">
           <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold mb-6">Boilers in Lanzarote — What You Should Know</h2>
+            <h2 className="text-2xl font-bold mb-6">Boilers in Lanzarote: What You Should Know</h2>
             <div className="space-y-5">
               {[
                 { point: "Scale and hard water damage", detail: "Desalinated water in Lanzarote has a high mineral content that accelerates scale build-up in heat exchangers. Annual servicing is particularly important here to prevent premature failure." },
                 { point: "Landlord legal requirement", detail: "All rental properties with gas appliances require an annual Gas Safety Certificate. We issue the certificate and maintain records for your compliance file." },
-                { point: "Energy efficiency savings", detail: "Replacing a boiler over 10 years old with a modern A-rated condensing model can reduce gas consumption significantly — relevant on an island where gas is expensive." },
+                { point: "Energy efficiency savings", detail: "Replacing a boiler over 10 years old with a modern A-rated condensing model can reduce gas consumption significantly: relevant on an island where gas is expensive." },
               ].map(({ point, detail }) => (
                 <div key={point} className="flex gap-4">
                   <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />

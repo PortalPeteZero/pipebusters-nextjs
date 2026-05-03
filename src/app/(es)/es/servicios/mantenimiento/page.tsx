@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Planes de Mantenimiento de Fontanería Lanzarote | Pipebusters",
   description:
-    "Planes de mantenimiento preventivo anual para propiedades en Lanzarote. Escáner de fugas, prueba de presión, revisión de caldera e inspección completa. Evita reparaciones de emergencia costosas.",
+    "Mantenimiento preventivo anual en Lanzarote. Escáner de fugas, prueba de presión, revisión de caldera e inspección completa. Evita emergencias costosas.",
   path: "/es/servicios/mantenimiento",
   locale: "es",
   alternate: { en: "/services/maintenance", es: "/es/servicios/mantenimiento" },
@@ -31,8 +31,8 @@ const included = [
   "Escáner completo de fugas mediante imagen térmica",
   "Prueba de presión de agua fría y caliente",
   "Análisis de combustión de la caldera y verificación de seguridad",
-  "Inspección de grifos y válvulas — detecta lavadoras y cartuchos defectuosos antes de que fallen",
-  "Revisión de inodoros y cisternas — identifica cisternas que corren y desperdician agua",
+  "Inspección de grifos y válvulas: detecta lavadoras y cartuchos defectuosos antes de que fallen",
+  "Revisión de inodoros y cisternas: identifica cisternas que corren y desperdician agua",
   "Inspección de la red de tuberías visible para detectar corrosión y deterioro de juntas",
   "Informe escrito de estado con fotografías",
   "Reserva prioritaria para cualquier reparación de seguimiento",

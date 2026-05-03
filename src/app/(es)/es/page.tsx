@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Detección de Fugas y Fontanería Lanzarote | Pipebusters",
   description:
-    "Servicios profesionales de detección de fugas y fontanería en Lanzarote. Cámara térmica, sensores acústicos, fugas en piscinas. Garantía Sin Encontrar, Sin Pagar.",
+    "Servicios de detección de fugas y fontanería en Lanzarote. Cámara térmica, sensores acústicos, fugas en piscinas. Garantía Sin Encontrar, Sin Pagar.",
   path: "/es",
   locale: "es",
   alternate: { en: "/", es: "/es" },
@@ -65,7 +65,7 @@ export default function HomePageES() {
             <div className="mb-4 animate-fade-in">
               <Image
                 src="/images/logo-transparent.png"
-                alt="Pipebusters Lanzarote — Expertos en Detección de Fugas y Fontanería"
+                alt="Pipebusters Lanzarote: Expertos en Detección de Fugas y Fontanería"
                 width={384}
                 height={384}
                 className="w-64 md:w-80 lg:w-96 mx-auto logo-glow"

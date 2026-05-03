@@ -18,7 +18,7 @@ export const metadata: Metadata = buildMetadata({
 const schema = serviceSchema({
   name: "Contacto Pipebusters Lanzarote",
   description:
-    "Página de contacto de Pipebusters Lanzarote — detección de fugas y fontanería profesional.",
+    "Página de contacto de Pipebusters Lanzarote: detección de fugas y fontanería profesional.",
   url: `${SITE.baseUrl}/es/contacto`,
   locale: "es",
 });

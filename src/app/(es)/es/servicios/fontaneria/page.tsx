@@ -6,7 +6,7 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Fontanero Lanzarote — Grifos, Inodoros, Duchas, Desatascos | Pipebusters",
+  title: "Fontanero Lanzarote: Grifos, Inodoros, Duchas, Desatascos | Pipebusters",
   description:
     "Fontanero cualificado en Lanzarote para viviendas, villas y locales comerciales. Grifos, inodoros, duchas, desatascos, toda la red de tuberías. Urgencias 24/7.",
   path: "/es/servicios/fontaneria",
@@ -59,7 +59,7 @@ export default function FontaneriaPage() {
           <p className="text-muted-foreground text-lg max-w-2xl">
             Fontaneros cualificados que cubren todos los trabajos de fontanería residencial y
             comercial en toda la isla. Desde un grifo que gotea hasta una reforma completa de
-            baño — lo hacemos todo de forma limpia y eficiente.
+            baño: lo hacemos todo de forma limpia y eficiente.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
             <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
@@ -99,7 +99,7 @@ export default function FontaneriaPage() {
       <section className="py-14 bg-charcoal-dark">
         <div className="container mx-auto">
           <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold mb-6">Fontanería en Lanzarote — Qué es Diferente</h2>
+            <h2 className="text-2xl font-bold mb-6">Fontanería en Lanzarote: Qué es Diferente</h2>
             <div className="space-y-4">
               {[
                 { point: "Agua dura e incrustaciones", detail: "El agua desalinizada de Lanzarote tiene un alto contenido mineral que acelera las incrustaciones en grifos, alcachofas de ducha y electrodomésticos. Especificamos e instalamos griferías diseñadas para estas condiciones." },

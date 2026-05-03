@@ -24,7 +24,7 @@ const posts = [
     slug: "signs-you-have-a-hidden-water-leak",
     title: "5 Señales de Que Tienes una Fuga de Agua Oculta en Tu Propiedad en Lanzarote",
     excerpt:
-      "Facturas de agua elevadas, manchas de humedad y el sonido de agua corriendo cuando los grifos están cerrados — aprende las señales de alarma que indican una fuga oculta.",
+      "Facturas de agua elevadas, manchas de humedad y el sonido de agua corriendo cuando los grifos están cerrados: aprende las señales de alarma que indican una fuga oculta.",
     date: "2024-03-15",
     readTime: "5 min",
     category: "Detección de Fugas",
@@ -69,7 +69,7 @@ const posts = [
     slug: "no-find-no-fee-what-it-means",
     title: "¿Qué Significa Exactamente 'Sin Encontrar, Sin Pagar'?",
     excerpt:
-      "Nuestra garantía explicada en términos sencillos — qué cubre, qué ocurre cuando sí encontramos la fuga, y cómo te protege de gastos innecesarios.",
+      "Nuestra garantía explicada en términos sencillos: qué cubre, qué ocurre cuando sí encontramos la fuga, y cómo te protege de gastos innecesarios.",
     date: "2023-10-18",
     readTime: "3 min",
     category: "Sobre Nosotros",
@@ -91,12 +91,12 @@ export default function BlogEsPage() {
             Consejos de Expertos
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            El Blog de{" "}
-            <span className="text-action-red">Pipebusters</span>
+            Blog de Detección de Fugas{" "}
+            <span className="text-action-red">Lanzarote</span>
           </h1>
           <p className="text-muted-foreground text-lg max-w-xl">
             Guías prácticas sobre detección de fugas, fontanería y gestión del agua para propietarios
-            en Lanzarote — escritas por ingenieros con más de 20 años en la isla.
+            en Lanzarote: escritas por ingenieros con más de 20 años en la isla.
           </p>
         </div>
       </section>
@@ -149,7 +149,7 @@ export default function BlogEsPage() {
           <BookOpen className="w-10 h-10 text-white mx-auto mb-4" />
           <h2 className="text-3xl font-bold text-white mb-4">¿Tienes un Problema Específico?</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
-            ¿No encuentras la respuesta en nuestro blog? Contáctanos directamente — con gusto
+            ¿No encuentras la respuesta en nuestro blog? Contáctanos directamente: con gusto
             ofrecemos asesoramiento gratuito antes de que hagas la reserva.
           </p>
           <Link

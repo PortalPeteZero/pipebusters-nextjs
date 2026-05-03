@@ -21,7 +21,7 @@ const breadcrumb = breadcrumbListSchema([
 
 const caseStudies = [
   {
-    title: "Hidden Slab Leak — Villa in Playa Blanca",
+    title: "Hidden Slab Leak,Villa in Playa Blanca",
     location: "Playa Blanca",
     service: "Leak Detection",
     problem:
@@ -32,7 +32,7 @@ const caseStudies = [
     outcomes: ["Leak located in 2 hours", "Single access hole only", "Same-day repair completed", "2-year warranty issued"],
   },
   {
-    title: "Swimming Pool Losing 15cm Per Day — Puerto del Carmen",
+    title: "Swimming Pool Losing 15cm Per Day,Puerto del Carmen",
     location: "Puerto del Carmen",
     service: "Pool Leak Detection",
     problem:
@@ -43,7 +43,7 @@ const caseStudies = [
     outcomes: ["Pool stayed filled throughout", "Repair without full drainage", "Return line resealed", "Zero water loss after repair"],
   },
   {
-    title: "Emergency Burst Pipe — Apartment Block, Costa Teguise",
+    title: "Emergency Burst Pipe,Apartment Block, Costa Teguise",
     location: "Costa Teguise",
     service: "Emergency Plumbing",
     problem:
@@ -54,7 +54,7 @@ const caseStudies = [
     outcomes: ["On-site within 55 minutes", "Flow stopped within 2 hours", "Residents back online same night", "Permanent fix next morning"],
   },
   {
-    title: "Concealed Roof Terrace Leak — Commercial Property, Arrecife",
+    title: "Concealed Roof Terrace Leak,Commercial Property, Arrecife",
     location: "Arrecife",
     service: "Leak Detection",
     problem:
@@ -62,7 +62,7 @@ const caseStudies = [
     solution:
       "Tracer gas was introduced to the cold-water circuit. Gas detection equipment tracked the path through the structure, revealing a pinhole leak in a horizontal run buried in the concrete deck above the dining room.",
     outcome: "Leak repaired in the correct location for the first time. No recurrence after 12 months.",
-    outcomes: ["Source correctly identified (first time)", "Tracer gas — no destructive investigation", "Repair targeted to 20cm section", "12-month follow-up: zero recurrence"],
+    outcomes: ["Source correctly identified (first time)", "Tracer gas,no destructive investigation", "Repair targeted to 20cm section", "12-month follow-up: zero recurrence"],
   },
 ];
 
@@ -81,7 +81,7 @@ export default function CaseStudiesPage() {
             Real Work, Real Results
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Case Studies —{" "}
+            Case Studies Lanzarote:{" "}
             <span className="text-action-red">Leaks Found &amp; Fixed</span>
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
@@ -137,7 +137,7 @@ export default function CaseStudiesPage() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Have a Similar Problem?</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
-            We&apos;ve seen it before. Contact us for a free assessment — no obligation, no call-out
+            We&apos;ve seen it before. Contact us for a free assessment,no obligation, no call-out
             charge if we don&apos;t find a leak.
           </p>
           <Link

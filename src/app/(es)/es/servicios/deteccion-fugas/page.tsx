@@ -6,9 +6,9 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Detección de Fugas Lanzarote — Cámara Térmica y Sensores Acústicos | Pipebusters",
+  title: "Detección de Fugas Lanzarote: Cámara Térmica y Sensores Acústicos | Pipebusters",
   description:
-    "Detección profesional de fugas ocultas en Lanzarote con cámaras térmicas, sensores acústicos y gas trazador. Garantía Sin Encontrar, Sin Pagar. Servicio en el mismo día.",
+    "Detección profesional de fugas ocultas en Lanzarote con cámaras térmicas, sensores acústicos y gas trazador. Sin Encontrar, Sin Pagar. Servicio en el mismo día.",
   path: "/es/servicios/deteccion-fugas",
   locale: "es",
   alternate: { en: "/services/leak-detection", es: "/es/servicios/deteccion-fugas" },
@@ -31,7 +31,7 @@ const methods = [
   {
     icon: Thermometer,
     title: "Imagen Térmica",
-    desc: "Las cámaras infrarrojas detectan diferencias de temperatura causadas por el movimiento del agua detrás de paredes, bajo suelos y en techos — sin necesidad de perforar.",
+    desc: "Las cámaras infrarrojas detectan diferencias de temperatura causadas por el movimiento del agua detrás de paredes, bajo suelos y en techos: sin necesidad de perforar.",
   },
   {
     icon: Mic2,
@@ -41,7 +41,7 @@ const methods = [
   {
     icon: FlaskConical,
     title: "Gas Trazador",
-    desc: "Se introduce una mezcla inofensiva de hidrógeno y nitrógeno en la tubería. Los detectores de gas localizan el punto de escape con precisión de centímetros — funciona a través del hormigón.",
+    desc: "Se introduce una mezcla inofensiva de hidrógeno y nitrógeno en la tubería. Los detectores de gas localizan el punto de escape con precisión de centímetros: funciona a través del hormigón.",
   },
   {
     icon: Droplets,
@@ -71,7 +71,7 @@ export default function DeteccionFugasPage() {
           <p className="text-muted-foreground text-lg max-w-2xl">
             Localizamos fugas de agua ocultas en propiedades residenciales y comerciales en toda
             Lanzarote usando tecnología avanzada de imagen térmica, sensores acústicos y gas trazador
-            — sin excavaciones ni daños innecesarios.
+           : sin excavaciones ni daños innecesarios.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
             <span className="bg-action-red/10 border border-action-red/30 text-action-red text-sm font-semibold px-3 py-1.5 rounded">
@@ -122,7 +122,7 @@ export default function DeteccionFugasPage() {
             {[
               { step: "01", title: "Inspección Inicial", desc: "Evaluamos la propiedad, revisamos los contadores y determinamos las zonas con mayor probabilidad de fuga." },
               { step: "02", title: "Escáner Tecnológico", desc: "Se aplican imagen térmica y sensores acústicos en toda la zona sospechosa." },
-              { step: "03", title: "Localización Exacta", desc: "Marcamos el punto exacto de la fuga — normalmente con una precisión de 30 cm — en el plano de tu propiedad." },
+              { step: "03", title: "Localización Exacta", desc: "Marcamos el punto exacto de la fuga, normalmente con una precisión de 30 cm, en el plano de tu propiedad." },
               { step: "04", title: "Informe Escrito", desc: "Recibirás un informe completo con fotos, localización de la fuga y recomendaciones de reparación." },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-charcoal-light border border-border/30 rounded-xl p-6">
@@ -143,7 +143,7 @@ export default function DeteccionFugasPage() {
             <h2 className="text-2xl font-bold mb-3">Garantía Sin Encontrar, Sin Pagar</h2>
             <p className="text-muted-foreground leading-relaxed">
               Si no podemos localizar ninguna fuga en tu propiedad, no pagas nada. Sin cargo por
-              desplazamiento, sin tarifa de inspección — coste cero para ti. Confiamos plenamente
+              desplazamiento, sin tarifa de inspección: coste cero para ti. Confiamos plenamente
               en nuestra tecnología y en nuestros ingenieros.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-6">
@@ -166,7 +166,7 @@ export default function DeteccionFugasPage() {
           <h2 className="text-3xl font-bold text-white mb-4">¿Sospechas de una Fuga Oculta?</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
             No esperes a que los daños aumenten. Contáctanos para una evaluación inicial gratuita
-            — te diremos honestamente si creemos que merece la pena investigar.
+           : te diremos honestamente si creemos que merece la pena investigar.
           </p>
           <Link
             href="/es/contacto"

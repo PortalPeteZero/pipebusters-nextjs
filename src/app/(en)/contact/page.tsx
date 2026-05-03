@@ -18,7 +18,7 @@ export const metadata: Metadata = buildMetadata({
 const schema = serviceSchema({
   name: "Contact Pipebusters Lanzarote",
   description:
-    "Contact page for Pipebusters Lanzarote — professional leak detection and plumbing services.",
+    "Contact page for Pipebusters Lanzarote: professional leak detection and plumbing services.",
   url: `${SITE.baseUrl}/contact`,
   locale: "en",
 });

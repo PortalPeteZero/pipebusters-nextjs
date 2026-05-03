@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Servicios de Fontanería y Detección de Fugas Lanzarote | Pipebusters",
   description:
-    "Gama completa de servicios de detección de fugas y fontanería en Lanzarote. Cámaras térmicas, sensores acústicos, fugas en piscinas, calderas y más. Garantía Sin Encontrar, Sin Pagar.",
+    "Detección de fugas y fontanería en Lanzarote. Cámaras térmicas, sensores acústicos, fugas en piscinas, calderas. Sin Encontrar, Sin Pagar.",
   path: "/es/servicios",
   locale: "es",
   alternate: { en: "/services", es: "/es/servicios" },
@@ -72,7 +72,7 @@ const services = [
   {
     icon: AlertTriangle,
     title: "Rotura de Tuberías",
-    desc: "Renovación de tuberías sin zanjas — sustituye tuberías antiguas o dañadas sin excavaciones extensas. En la mayoría de los casos, completado en un día.",
+    desc: "Renovación de tuberías sin zanjas: sustituye tuberías antiguas o dañadas sin excavaciones extensas. En la mayoría de los casos, completado en un día.",
     href: "/es/servicios/rotura-tuberias",
     tag: "Tecnología Sin Zanjas",
   },
@@ -95,7 +95,7 @@ export default function ServiciosPage() {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
             Servicios Profesionales de{" "}
             <span className="text-action-red">Detección de Fugas</span>{" "}
-            y Fontanería
+            y Fontanería en Lanzarote
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             Desde la localización de fugas ocultas hasta instalaciones completas de fontanería,

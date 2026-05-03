@@ -6,7 +6,7 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pool Plumbing Lanzarote — Pumps, Filters & Pipework | Pipebusters",
+  title: "Pool Plumbing Lanzarote: Pumps, Filters & Pipework | Pipebusters",
   description:
     "Complete pool plumbing services in Lanzarote. Pump and filter installation, circulation system repair, pipework replacement. All pool types covered.",
   path: "/services/pool-plumbing",

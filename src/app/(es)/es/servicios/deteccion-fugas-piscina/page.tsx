@@ -6,9 +6,9 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Detección de Fugas en Piscinas Lanzarote — No Invasivo | Pipebusters",
+  title: "Detección de Fugas en Piscinas Lanzarote: Sin Vaciar, Sin Pagar | Pipebusters",
   description:
-    "Detección especializada de fugas en piscinas en Lanzarote. Pruebas de presión, inyección de tinte, sensores acústicos. Localiza fugas sin vaciar la piscina. Sin Encontrar, Sin Pagar.",
+    "Detección de fugas en piscinas en Lanzarote. Pruebas de presión, inyección de tinte, sensores acústicos. Sin vaciar la piscina. Sin Encontrar, Sin Pagar.",
   path: "/es/servicios/deteccion-fugas-piscina",
   locale: "es",
   alternate: { en: "/services/pool-leak-detection", es: "/es/servicios/deteccion-fugas-piscina" },
@@ -36,7 +36,7 @@ const methods = [
   {
     icon: FlaskConical,
     title: "Pruebas de Tinte",
-    desc: "Se introduce tinte fluorescente cerca de grietas, racores y boquillas de retorno sospechosos. Cualquier fuga activa absorbe el tinte — visible en tiempo real.",
+    desc: "Se introduce tinte fluorescente cerca de grietas, racores y boquillas de retorno sospechosos. Cualquier fuga activa absorbe el tinte: visible en tiempo real.",
   },
   {
     icon: Search,
@@ -70,7 +70,7 @@ export default function DeteccionFugasPiscinaPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             ¿Tu piscina pierde más agua de lo que puede explicar la evaporación? Localizamos
-            fugas en piscinas y spas en toda Lanzarote mediante tecnología no invasiva — sin
+            fugas en piscinas y spas en toda Lanzarote mediante tecnología no invasiva: sin
             vaciar la piscina en la mayoría de los casos.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -95,7 +95,7 @@ export default function DeteccionFugasPiscinaPage() {
             <p className="text-muted-foreground text-sm leading-relaxed mb-3">
               Llena un cubo al nivel del agua de la piscina, colócalo en un escalón y marca ambos
               niveles. Después de 24 horas, si la piscina ha bajado más que el cubo, tienes una
-              fuga — no solo evaporación. Las piscinas en Lanzarote suelen perder entre 3 y 5 mm
+              fuga: no solo evaporación. Las piscinas en Lanzarote suelen perder entre 3 y 5 mm
               al día por evaporación. Cualquier pérdida mayor merece ser investigada.
             </p>
             <p className="text-electric-blue text-sm font-semibold">
@@ -155,7 +155,7 @@ export default function DeteccionFugasPiscinaPage() {
       <section className="py-14 bg-action-red">
         <div className="container mx-auto text-center">
           <ShieldCheck className="w-10 h-10 text-white mx-auto mb-4" />
-          <h2 className="text-3xl font-bold text-white mb-4">Sin Encontrar, Sin Pagar — También en Piscinas</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Sin Encontrar, Sin Pagar: También en Piscinas</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
             Nuestra garantía se aplica también a las investigaciones de fugas en piscinas.
             Si no encontramos ninguna fuga, no pagas nada.

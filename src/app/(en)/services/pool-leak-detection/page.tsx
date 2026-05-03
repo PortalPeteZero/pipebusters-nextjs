@@ -6,7 +6,7 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pool Leak Detection Lanzarote — Non-Invasive | Pipebusters",
+  title: "Pool Leak Detection Lanzarote: No Find, No Fee | Pipebusters",
   description:
     "Specialist swimming pool leak detection in Lanzarote. Pressure testing, dye injection, acoustic sensors. Find pool leaks without draining. No Find, No Fee.",
   path: "/services/pool-leak-detection",
@@ -36,7 +36,7 @@ const methods = [
   {
     icon: FlaskConical,
     title: "Dye Testing",
-    desc: "Fluorescent dye is introduced near suspected cracks, fittings, and return jets. Any active leak draws the dye in — visible in real time.",
+    desc: "Fluorescent dye is introduced near suspected cracks, fittings, and return jets. Any active leak draws the dye in: visible in real time.",
   },
   {
     icon: Search,
@@ -70,7 +70,7 @@ export default function PoolLeakDetectionPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             Is your pool losing more water than evaporation can explain? We locate swimming pool
-            and spa leaks across Lanzarote using non-invasive technology — without draining your
+            and spa leaks across Lanzarote using non-invasive technology: without draining your
             pool in most cases.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -94,7 +94,7 @@ export default function PoolLeakDetectionPage() {
             <h2 className="text-lg font-bold mb-3">How to Tell if It&apos;s a Leak or Evaporation</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-3">
               Fill a bucket to pool water level, place it on a pool step, and mark both levels.
-              After 24 hours, if the pool has dropped more than the bucket, you have a leak —
+              After 24 hours, if the pool has dropped more than the bucket, you have a leak,
               not just evaporation. Lanzarote pools typically lose 3–5mm per day to evaporation.
               Anything more warrants investigation.
             </p>
@@ -155,7 +155,7 @@ export default function PoolLeakDetectionPage() {
       <section className="py-14 bg-action-red">
         <div className="container mx-auto text-center">
           <ShieldCheck className="w-10 h-10 text-white mx-auto mb-4" />
-          <h2 className="text-3xl font-bold text-white mb-4">No Find, No Fee — On Pool Leaks Too</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">No Find, No Fee: On Pool Leaks Too</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
             Our guarantee applies to pool leak investigations as well as domestic leaks. If we
             can&apos;t find a leak, you pay nothing.

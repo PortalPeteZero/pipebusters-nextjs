@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Rotura de Tuberías y Renovación Sin Zanjas Lanzarote | Pipebusters",
   description:
-    "Renovación de tuberías sin zanjas en Lanzarote — sustituye tuberías antiguas o dañadas sin excavaciones extensas. Completado en un día en la mayoría de los casos. Evaluación gratuita.",
+    "Renovación de tuberías sin zanjas en Lanzarote. Sustituye tuberías dañadas sin excavaciones extensas. Completado en un día. Evaluación gratuita.",
   path: "/es/servicios/rotura-tuberias",
   locale: "es",
   alternate: { en: "/services/pipe-bursting", es: "/es/servicios/rotura-tuberias" },
@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
 
 const schema = serviceSchema({
   name: "Rotura de Tuberías Lanzarote",
-  description: "Renovación de tuberías sin zanjas — sustituye tuberías envejecidas sin excavaciones extensas.",
+  description: "Renovación de tuberías sin zanjas: sustituye tuberías envejecidas sin excavaciones extensas.",
   url: `${SITE.baseUrl}/es/servicios/rotura-tuberias`,
   locale: "es",
 });
@@ -31,7 +31,7 @@ const benefits = [
   { title: "Excavación mínima", desc: "Solo se excavan pozos de acceso en cada extremo del tramo de tubería. Sin zanjas largas, sin daños en el jardín, pavimento ni estructuras." },
   { title: "Completado en un día", desc: "La mayoría de los trabajos domésticos de rotura de tuberías se completan en una sola jornada. Tienes agua antes de que nos vayamos." },
   { title: "Mayor diámetro de tubería", desc: "La tubería nueva es ligeramente mayor que la antigua, lo que mejora el caudal si la original estaba infradimensionada o incrustada." },
-  { title: "Material duradero", desc: "La nueva tubería de HDPE o PE100 es muy resistente a la corrosión y las incrustaciones — vida útil superior a 50 años en las condiciones de Lanzarote." },
+  { title: "Material duradero", desc: "La nueva tubería de HDPE o PE100 es muy resistente a la corrosión y las incrustaciones, con vida útil superior a 50 años en las condiciones de Lanzarote." },
   { title: "Rentable", desc: "Significativamente más económico que la excavación abierta completa cuando se tienen en cuenta la restitución de azulejos, jardinería y hormigón." },
   { title: "Con garantía", desc: "Todos los trabajos sin zanjas incluyen nuestra garantía estándar de mano de obra de 2 años más la garantía de producto del fabricante de la tubería." },
 ];
@@ -56,8 +56,8 @@ export default function RoturaTuberiasPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             La rotura de tuberías es un método sin zanjas que sustituye tuberías enterradas
-            antiguas, agrietadas o corroídas tirando de una tubería nueva a través de la existente
-            — fracturando la antigua hacia afuera a su paso. Resultado: tubería nueva instalada
+            antiguas, agrietadas o corroídas tirando de una tubería nueva a través de la existente,
+            fracturando la antigua hacia afuera a su paso. Resultado: tubería nueva instalada
             con una fracción de la excavación.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -80,7 +80,7 @@ export default function RoturaTuberiasPage() {
           <h2 className="text-2xl font-bold mb-10">Cómo Funciona la Rotura de Tuberías</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
             {[
-              { step: "01", title: "Puntos de Acceso", desc: "Se excavan pequeños pozos en cada extremo del tramo de tubería — normalmente de 60 cm × 60 cm. Esa es toda la excavación necesaria." },
+              { step: "01", title: "Puntos de Acceso", desc: "Se excavan pequeños pozos en cada extremo del tramo de tubería, normalmente de 60 cm x 60 cm. Esa es toda la excavación necesaria." },
               { step: "02", title: "Nueva Tubería Introducida", desc: "Un cabezal de rotura se fija a la nueva tubería de PE y se introduce a través de la antigua, fracturándola hacia el terreno circundante." },
               { step: "03", title: "Conexiones Realizadas", desc: "La nueva tubería se conecta en ambos extremos, se somete a prueba de presión y se restituyen los pozos de acceso. Trabajo completado." },
             ].map(({ step, title, desc }) => (

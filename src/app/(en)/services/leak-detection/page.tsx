@@ -6,7 +6,7 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Leak Detection Lanzarote — Thermal Imaging & Acoustic Sensors | Pipebusters",
+  title: "Leak Detection Lanzarote: Thermal Imaging & Acoustic Sensors | Pipebusters",
   description:
     "Professional hidden leak detection in Lanzarote using thermal cameras, acoustic sensors, and tracer gas. No Find, No Fee guarantee. Same-day service available.",
   path: "/services/leak-detection",
@@ -31,7 +31,7 @@ const methods = [
   {
     icon: Thermometer,
     title: "Thermal Imaging",
-    desc: "Infrared cameras detect temperature differences caused by water movement behind walls, under floors, and in ceilings — no drilling required.",
+    desc: "Infrared cameras detect temperature differences caused by water movement behind walls, under floors, and in ceilings: no drilling required.",
   },
   {
     icon: Mic2,
@@ -41,7 +41,7 @@ const methods = [
   {
     icon: FlaskConical,
     title: "Tracer Gas Testing",
-    desc: "A harmless hydrogen/nitrogen mix is introduced to the pipe. Gas detectors pinpoint the escape point to within centimetres — works through concrete and screed.",
+    desc: "A harmless hydrogen/nitrogen mix is introduced to the pipe. Gas detectors pinpoint the escape point to within centimetres: works through concrete and screed.",
   },
   {
     icon: Droplets,
@@ -70,7 +70,7 @@ export default function LeakDetectionPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             We locate hidden water leaks in residential and commercial properties across Lanzarote
-            using advanced thermal imaging, acoustic sensors, and tracer gas technology — with no
+            using advanced thermal imaging, acoustic sensors, and tracer gas technology: with no
             unnecessary excavation or damage.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -121,7 +121,7 @@ export default function LeakDetectionPage() {
             {[
               { step: "01", title: "Initial Survey", desc: "We assess the property, review meter readings, and identify likely leak zones." },
               { step: "02", title: "Technology Scan", desc: "Thermal imaging and acoustic sensors are used across the suspect area." },
-              { step: "03", title: "Pinpoint Location", desc: "We mark the exact leak point — usually to within 30cm — on your floor plan." },
+              { step: "03", title: "Pinpoint Location", desc: "We mark the exact leak point, usually to within 30cm, on your floor plan." },
               { step: "04", title: "Written Report", desc: "You receive a full written report with photos, leak location, and repair recommendations." },
             ].map(({ step, title, desc }) => (
               <div key={step} className="bg-charcoal-light border border-border/30 rounded-xl p-6">
@@ -142,7 +142,7 @@ export default function LeakDetectionPage() {
             <h2 className="text-2xl font-bold mb-3">No Find, No Fee Guarantee</h2>
             <p className="text-muted-foreground leading-relaxed">
               If we cannot locate a leak in your property, you pay nothing. No call-out charge, no
-              survey fee — zero cost to you. We back our technology and our engineers completely.
+              survey fee: zero cost to you. We back our technology and our engineers completely.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-6">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -163,7 +163,7 @@ export default function LeakDetectionPage() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Suspect a Hidden Leak?</h2>
           <p className="text-white/80 max-w-xl mx-auto mb-8">
-            Don&apos;t wait for the damage to get worse. Contact us for a free initial assessment —
+            Don&apos;t wait for the damage to get worse. Contact us for a free initial assessment:
             we&apos;ll tell you honestly whether we think there&apos;s a leak worth investigating.
           </p>
           <Link

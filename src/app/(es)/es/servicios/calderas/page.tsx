@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Instalación y Mantenimiento de Calderas Lanzarote | Pipebusters",
   description:
-    "Sustitución, instalación y mantenimiento anual de calderas en Lanzarote. Técnicos cualificados, modelos de alta eficiencia energética suministrados e instalados. Presupuesto gratuito.",
+    "Instalación y mantenimiento de calderas en Lanzarote. Técnicos cualificados. Modelos eficientes suministrados e instalados. Presupuesto gratuito.",
   path: "/es/servicios/calderas",
   locale: "es",
   alternate: { en: "/services/boiler-services", es: "/es/servicios/calderas" },
@@ -111,12 +111,12 @@ export default function CalderasPage() {
       <section className="py-14 bg-charcoal-dark">
         <div className="container mx-auto">
           <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold mb-6">Calderas en Lanzarote — Lo Que Debes Saber</h2>
+            <h2 className="text-2xl font-bold mb-6">Calderas en Lanzarote: Lo Que Debes Saber</h2>
             <div className="space-y-5">
               {[
                 { point: "Daños por cal y agua dura", detail: "El agua desalinizada de Lanzarote tiene un alto contenido mineral que acelera la acumulación de cal en los intercambiadores de calor. El mantenimiento anual es especialmente importante aquí para evitar averías prematuras." },
                 { point: "Obligación legal del propietario", detail: "Todas las propiedades en alquiler con aparatos de gas requieren un certificado anual de seguridad del gas. Lo emitimos nosotros y conservamos los registros para tu expediente de cumplimiento." },
-                { point: "Ahorro en eficiencia energética", detail: "Sustituir una caldera de más de 10 años por un modelo de condensación moderno de clase A puede reducir significativamente el consumo de gas — especialmente relevante en una isla donde el gas es costoso." },
+                { point: "Ahorro en eficiencia energética", detail: "Sustituir una caldera de más de 10 años por un modelo de condensación moderno de clase A puede reducir significativamente el consumo de gas: especialmente relevante en una isla donde el gas es costoso." },
               ].map(({ point, detail }) => (
                 <div key={point} className="flex gap-4">
                   <CheckCircle className="w-5 h-5 text-action-red shrink-0 mt-0.5" />

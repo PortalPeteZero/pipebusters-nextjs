@@ -6,7 +6,7 @@ import { serviceSchema, breadcrumbListSchema, serializeSchema } from "@/lib/seo/
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Plumber Lanzarote — Taps, Toilets, Showers, Drains | Pipebusters",
+  title: "Plumber Lanzarote: Taps, Toilets, Showers, Drains | Pipebusters",
   description:
     "Qualified plumber in Lanzarote for homes, villas, and commercial properties. Taps, toilets, showers, blocked drains, full pipework. Same-day emergency response.",
   path: "/services/plumbing",
@@ -58,7 +58,7 @@ export default function PlumbingPage() {
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             Qualified plumbers covering all residential and commercial plumbing work across the
-            island. From a dripping tap to a full bathroom refit — we handle everything cleanly
+            island. From a dripping tap to a full bathroom refit: we handle everything cleanly
             and efficiently.
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
@@ -80,7 +80,7 @@ export default function PlumbingPage() {
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold mb-3">What We Fix &amp; Install</h2>
           <p className="text-muted-foreground mb-10 max-w-2xl">
-            We cover the full range of plumbing works — planned installations, routine repairs,
+            We cover the full range of plumbing works: planned installations, routine repairs,
             and emergency callouts.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -99,7 +99,7 @@ export default function PlumbingPage() {
       <section className="py-14 bg-charcoal-dark">
         <div className="container mx-auto">
           <div className="max-w-3xl">
-            <h2 className="text-2xl font-bold mb-6">Plumbing in Lanzarote — What&apos;s Different</h2>
+            <h2 className="text-2xl font-bold mb-6">Plumbing in Lanzarote: What&apos;s Different</h2>
             <div className="space-y-4">
               {[
                 { point: "Hard water &amp; scale", detail: "Lanzarote&apos;s desalinated water is high in mineral content. This accelerates scale build-up in taps, showerheads, and appliances. We specify and install fittings designed for these conditions." },
