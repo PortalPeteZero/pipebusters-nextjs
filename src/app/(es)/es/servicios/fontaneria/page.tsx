@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Fontanero Lanzarote: Grifos, Inodoros, Duchas, Desatascos | Pipebusters",
+  title: "Fontanero Lanzarote: Grifos, Inodoros, Duchas, Desatascos",
   description:
     "Fontanero cualificado en Lanzarote para viviendas, villas y locales comerciales. Grifos, inodoros, duchas, desatascos, toda la red de tuberías. Urgencias 24/7.",
   path: "/es/servicios/fontaneria",

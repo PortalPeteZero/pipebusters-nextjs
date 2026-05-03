@@ -6,7 +6,7 @@ import { breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Leak Detection & Plumbing Blog Lanzarote | Pipebusters",
+  title: "Leak Detection & Plumbing Blog Lanzarote",
   description:
     "Expert advice on leak detection, plumbing maintenance, and water management for Lanzarote properties. Tips from 20+ years of experience.",
   path: "/blog",

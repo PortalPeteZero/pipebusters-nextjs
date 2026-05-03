@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Plumbing & Leak Detection Services Lanzarote | Pipebusters",
   description:
-    "Full range of leak detection and plumbing services across Lanzarote. Thermal imaging, acoustic sensors, pool leaks, boilers, pipe bursting and more. No Find, No Fee.",
+    "Leak detection and plumbing services across Lanzarote. Thermal imaging, acoustic sensors, pool leaks, boilers, pipe bursting. No Find, No Fee.",
   path: "/services",
   locale: "en",
   alternate: { en: "/services", es: "/es/servicios" },

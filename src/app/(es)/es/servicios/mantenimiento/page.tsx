@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Planes de Mantenimiento de Fontanería Lanzarote | Pipebusters",
+  title: "Planes de Mantenimiento de Fontanería Lanzarote",
   description:
     "Mantenimiento preventivo anual en Lanzarote. Escáner de fugas, prueba de presión, revisión de caldera e inspección completa. Evita emergencias costosas.",
   path: "/es/servicios/mantenimiento",

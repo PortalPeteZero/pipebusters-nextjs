@@ -6,7 +6,7 @@ import { breadcrumbListSchema, serializeSchema } from "@/lib/seo/schema";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Blog de Fontanería y Detección de Fugas Lanzarote | Pipebusters",
+  title: "Blog de Fontanería y Detección de Fugas Lanzarote",
   description:
     "Consejos de expertos sobre detección de fugas, mantenimiento de fontanería y gestión del agua para propiedades en Lanzarote. Más de 20 años de experiencia.",
   path: "/es/blog",

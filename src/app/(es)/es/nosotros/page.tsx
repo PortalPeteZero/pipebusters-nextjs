@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Nosotros | Detección de Fugas y Fontanería Lanzarote | Pipebusters",
+  title: "Nosotros | Detección de Fugas y Fontanería Lanzarote",
   description:
     "Conoce a Pipebusters Lanzarote: especialistas en detección de fugas y fontanería con más de 20 años de experiencia. Garantía Sin Encontrar, Sin Pagar.",
   path: "/es/nosotros",

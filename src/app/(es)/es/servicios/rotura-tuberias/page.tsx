@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Rotura de Tuberías y Renovación Sin Zanjas Lanzarote | Pipebusters",
+  title: "Rotura de Tuberías y Renovación Sin Zanjas Lanzarote",
   description:
     "Renovación de tuberías sin zanjas en Lanzarote. Sustituye tuberías dañadas sin excavaciones extensas. Completado en un día. Evaluación gratuita.",
   path: "/es/servicios/rotura-tuberias",

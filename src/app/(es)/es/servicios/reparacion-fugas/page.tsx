@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Reparación de Fugas Lanzarote: Mínima Interrupción, Garantía 2 Años | Pipebusters",
+  title: "Reparación de Fugas Lanzarote: Mínima Interrupción, Garantía 2 Años",
   description:
     "Reparación profesional de fugas en Lanzarote. Reparación de tuberías, sellado de uniones, revestimiento epoxi. Mínima interrupción, garantía de 2 años.",
   path: "/es/servicios/reparacion-fugas",

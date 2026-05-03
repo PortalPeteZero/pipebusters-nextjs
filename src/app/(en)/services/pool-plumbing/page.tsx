@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pool Plumbing Lanzarote: Pumps, Filters & Pipework | Pipebusters",
+  title: "Pool Plumbing Lanzarote: Pumps, Filters & Pipework",
   description:
     "Complete pool plumbing services in Lanzarote. Pump and filter installation, circulation system repair, pipework replacement. All pool types covered.",
   path: "/services/pool-plumbing",

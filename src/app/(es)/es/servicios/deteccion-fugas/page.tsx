@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Detección de Fugas Lanzarote: Cámara Térmica y Sensores Acústicos | Pipebusters",
+  title: "Detección de Fugas Lanzarote: Cámara Térmica y Acústica",
   description:
     "Detección profesional de fugas ocultas en Lanzarote con cámaras térmicas, sensores acústicos y gas trazador. Sin Encontrar, Sin Pagar. Servicio en el mismo día.",
   path: "/es/servicios/deteccion-fugas",

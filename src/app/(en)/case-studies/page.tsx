@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Leak Detection Case Studies Lanzarote | Pipebusters",
   description:
-    "Real examples of leak detection and plumbing work completed across Lanzarote. See how Pipebusters found hidden leaks, repaired pools, and solved plumbing emergencies.",
+    "Real examples of leak detection and plumbing work in Lanzarote. Hidden leaks found, pools repaired, plumbing emergencies solved. No Find, No Fee.",
   path: "/case-studies",
   locale: "en",
   alternate: { en: "/case-studies", es: "/es/casos-de-exito" },

@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Instalación y Mantenimiento de Calderas Lanzarote | Pipebusters",
+  title: "Instalación y Mantenimiento de Calderas Lanzarote",
   description:
     "Instalación y mantenimiento de calderas en Lanzarote. Técnicos cualificados. Modelos eficientes suministrados e instalados. Presupuesto gratuito.",
   path: "/es/servicios/calderas",

@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Leak Detection Lanzarote: Thermal Imaging & Acoustic Sensors | Pipebusters",
+  title: "Leak Detection Lanzarote: Thermal Imaging & Acoustic Sensors",
   description:
     "Professional hidden leak detection in Lanzarote using thermal cameras, acoustic sensors, and tracer gas. No Find, No Fee guarantee. Same-day service available.",
   path: "/services/leak-detection",
