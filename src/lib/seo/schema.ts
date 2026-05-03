@@ -58,7 +58,7 @@ export function localBusinessSchema(locale: Locale): object {
     ],
     openingHoursSpecification: SITE.openingHours.map((h) => ({
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: h.days,
+      dayOfWeek: h.days.map((d: string) => `https://schema.org/${d}`),
       opens: h.opens,
       closes: h.closes,
     })),
@@ -101,12 +101,14 @@ export function serviceSchema(input: ServiceSchemaInput): object {
     name: input.name,
     description: input.description,
     url: input.url,
-    provider: { "@id": organizationId },
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": organizationId,
+    },
     areaServed: {
       "@type": "AdministrativeArea",
       name: "Lanzarote",
     },
-    inLanguage: input.locale === "es" ? "es-ES" : "en-GB",
   };
 }
 
