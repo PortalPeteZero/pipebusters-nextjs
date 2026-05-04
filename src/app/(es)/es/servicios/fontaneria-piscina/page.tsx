@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Fontanería de Piscinas Lanzarote: Bombas, Filtros y Tuberías",
+  title: "Fontanería de Piscinas Lanzarote: Bombas y Filtros",
   description:
     "Fontanería de piscinas en Lanzarote. Instalación de bombas y filtros, reparación del sistema de circulación, sustitución de tuberías.",
   path: "/es/servicios/fontaneria-piscina",

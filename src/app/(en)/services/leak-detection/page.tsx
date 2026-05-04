@@ -7,9 +7,9 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Leak Detection Lanzarote: Thermal Imaging & Acoustic Sensors",
+  title: "Leak Detection Lanzarote: Thermal & Acoustic",
   description:
-    "Professional hidden leak detection in Lanzarote using thermal cameras, acoustic sensors, and tracer gas. No Find, No Fee guarantee. Same-day service available.",
+    "Hidden leak detection in Lanzarote using thermal cameras, acoustic sensors, and tracer gas. No Find, No Fee guarantee. Same-day service.",
   path: "/services/leak-detection",
   locale: "en",
   alternate: { en: "/services/leak-detection", es: "/es/servicios/deteccion-fugas" },

@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Leak Repair Lanzarote: Minimal Disruption, 2-Year Warranty",
   description:
-    "Professional leak repair across Lanzarote. Pipe repair, joint sealing, epoxy lining. Minimal disruption, 2-year warranty on all work. Same-day repairs available",
+    "Leak repair across Lanzarote. Pipe repair, joint sealing, epoxy lining. Minimal disruption, 2-year warranty. Same-day repairs available.",
   path: "/services/leak-repair",
   locale: "en",
   alternate: { en: "/services/leak-repair", es: "/es/servicios/reparacion-fugas" },

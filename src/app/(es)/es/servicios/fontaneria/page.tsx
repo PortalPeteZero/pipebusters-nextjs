@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Fontanero Lanzarote: Grifos, Inodoros, Duchas, Desatascos",
   description:
-    "Fontanero cualificado en Lanzarote para viviendas, villas y locales comerciales. Grifos, inodoros, duchas, desatascos, toda la red de tuberías. Urgencias 24/7.",
+    "Fontanero cualificado en Lanzarote: viviendas, villas y locales. Grifos, inodoros, duchas, desatascos, red de tuberías. Urgencias 24/7.",
   path: "/es/servicios/fontaneria",
   locale: "es",
   alternate: { en: "/services/plumbing", es: "/es/servicios/fontaneria" },

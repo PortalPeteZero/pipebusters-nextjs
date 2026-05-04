@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Reparación de Fugas Lanzarote: Sin Obras, Garantía 2 Años",
   description:
-    "Reparación profesional de fugas en Lanzarote. Reparación de tuberías, sellado de uniones, revestimiento epoxi. Mínima interrupción, garantía de 2 años.",
+    "Reparación de fugas en Lanzarote. Tuberías, sellado de uniones, revestimiento epoxi. Mínima interrupción, garantía de 2 años.",
   path: "/es/servicios/reparacion-fugas",
   locale: "es",
   alternate: { en: "/services/leak-repair", es: "/es/servicios/reparacion-fugas" },

@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Pipe Bursting & Trenchless Pipe Replacement Lanzarote | Pipebusters",
+  title: "Trenchless Pipe Bursting Lanzarote | Pipebusters",
   description:
     "Trenchless pipe renewal in Lanzarote: replace old or damaged pipework without extensive excavation. Single-day completion in most cases. Free survey.",
   path: "/services/pipe-bursting",

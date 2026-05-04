@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Blog de Fontanería y Detección de Fugas Lanzarote",
   description:
-    "Consejos de expertos sobre detección de fugas, mantenimiento de fontanería y gestión del agua para propiedades en Lanzarote. Más de 20 años de experiencia.",
+    "Consejos sobre detección de fugas, mantenimiento de fontanería y gestión del agua en Lanzarote. Más de 20 años de experiencia.",
   path: "/es/blog",
   locale: "es",
   alternate: { en: "/blog", es: "/es/blog" },

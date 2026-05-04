@@ -7,9 +7,9 @@ import { SITE } from "@/lib/site";
 import Image from "next/image";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Detección de Fugas Piscinas Lanzarote: Sin Vaciar, Sin Pagar",
+  title: "Detección de Fugas en Piscinas Lanzarote — Sin Vaciar",
   description:
-    "Detección de fugas en piscinas en Lanzarote. Pruebas de presión, inyección de tinte, sensores acústicos. Sin vaciar la piscina. Sin Encontrar, Sin Pagar.",
+    "Detección de fugas en piscinas, Lanzarote. Pruebas de presión, inyección de tinte, sensores acústicos. Sin vaciar. Sin Encontrar, Sin Pagar.",
   path: "/es/servicios/deteccion-fugas-piscina",
   locale: "es",
   alternate: { en: "/services/pool-leak-detection", es: "/es/servicios/deteccion-fugas-piscina" },

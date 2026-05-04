@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Plumbing Maintenance Plans Lanzarote | Pipebusters",
   description:
-    "Annual preventive maintenance plans for properties in Lanzarote. Leak scan, pressure test, boiler check, and full inspection. Avoid expensive emergency repairs.",
+    "Annual preventive maintenance for Lanzarote properties. Leak scan, pressure test, boiler check, full inspection. Avoid expensive emergency repairs.",
   path: "/services/maintenance",
   locale: "en",
   alternate: { en: "/services/maintenance", es: "/es/servicios/mantenimiento" },

@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Plumber Lanzarote: Taps, Toilets, Showers, Drains",
   description:
-    "Qualified plumber in Lanzarote for homes, villas, and commercial properties. Taps, toilets, showers, blocked drains, full pipework. Same-day emergency response.",
+    "Qualified plumber in Lanzarote for homes, villas, and commercial sites. Taps, toilets, showers, drains, pipework. Same-day emergency response.",
   path: "/services/plumbing",
   locale: "en",
   alternate: { en: "/services/plumbing", es: "/es/servicios/fontaneria" },

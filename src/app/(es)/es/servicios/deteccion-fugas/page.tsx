@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Detección de Fugas Lanzarote: Cámara Térmica y Acústica",
   description:
-    "Detección profesional de fugas ocultas en Lanzarote con cámaras térmicas, sensores acústicos y gas trazador. Sin Encontrar, Sin Pagar. Servicio en el mismo día.",
+    "Detección de fugas ocultas en Lanzarote con cámaras térmicas, sensores acústicos y gas trazador. Sin Encontrar, Sin Pagar. Servicio el mismo día.",
   path: "/es/servicios/deteccion-fugas",
   locale: "es",
   alternate: { en: "/services/leak-detection", es: "/es/servicios/deteccion-fugas" },

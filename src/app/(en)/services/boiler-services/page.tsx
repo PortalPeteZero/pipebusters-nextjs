@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Boiler Installation & Servicing Lanzarote | Pipebusters",
   description:
-    "Boiler replacement, installation, and annual maintenance in Lanzarote. Gas Safe registered engineers, energy-efficient models supplied and fitted. Free quote.",
+    "Boiler replacement, install, and annual maintenance in Lanzarote. Gas Safe engineers, energy-efficient models supplied and fitted. Free quote.",
   path: "/services/boiler-services",
   locale: "en",
   alternate: { en: "/services/boiler-services", es: "/es/servicios/calderas" },

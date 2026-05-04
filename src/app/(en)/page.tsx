@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = buildMetadata({
   title: "Leak Detection & Plumbing Lanzarote | Pipebusters",
   description:
-    "Professional leak detection and plumbing services across Lanzarote. Advanced thermal imaging, acoustic sensors, pool leak detection. No Find, No Fee guarantee.",
+    "Professional leak detection and plumbing in Lanzarote. Thermal imaging, acoustic sensors, pool leak detection. No Find, No Fee guarantee.",
   path: "/",
   locale: "en",
   alternate: { en: "/", es: "/es" },

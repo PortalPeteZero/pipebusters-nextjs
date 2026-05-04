@@ -9,7 +9,7 @@ import Image from "next/image";
 export const metadata: Metadata = buildMetadata({
   title: "Planes de Mantenimiento de Fontanería Lanzarote",
   description:
-    "Mantenimiento preventivo anual en Lanzarote. Escáner de fugas, prueba de presión, revisión de caldera e inspección completa. Evita emergencias costosas.",
+    "Mantenimiento preventivo anual en Lanzarote. Escáner de fugas, prueba de presión, revisión de caldera, inspección completa. Evita emergencias.",
   path: "/es/servicios/mantenimiento",
   locale: "es",
   alternate: { en: "/services/maintenance", es: "/es/servicios/mantenimiento" },
